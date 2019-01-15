@@ -16,6 +16,20 @@ class GridAdapter(private var mItems: List<GridItem>) : RecyclerView.Adapter<Gri
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.item = mItems[position]
+        holder.binding.listener = clickListener
+    }
+
+    private val clickListener = object : ClickListener {
+        override fun onClick(o: Any) {
+            if (o is GridItem) {
+                for (mItem in mItems) {
+                    if (mItem.id == o.id) {
+                        mItem.isChecked = !mItem.isChecked
+                    }
+                }
+            }
+            notifyDataSetChanged()
+        }
     }
 
     override fun getItemCount(): Int {

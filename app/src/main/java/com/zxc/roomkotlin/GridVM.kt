@@ -7,11 +7,11 @@ import android.arch.lifecycle.MutableLiveData
 class GridVM(app: Application) : AndroidViewModel(app) {
 
     private val items = mutableListOf(
-            GridItem(1, "Hello", "hello"),
-            GridItem(2, "Hello", "hello"),
-            GridItem(3, "Hello", "hello"),
-            GridItem(4, "Hello", "hello"),
-            GridItem(5, "Hello", "hello")
+            GridItem(1, "Hello", "hello", false),
+            GridItem(2, "Hello", "hello", false),
+            GridItem(3, "Hello", "hello", false),
+            GridItem(4, "Hello", "hello", false),
+            GridItem(5, "Hello", "hello", false)
     )
     val adapter = MutableLiveData<GridAdapter>()
 

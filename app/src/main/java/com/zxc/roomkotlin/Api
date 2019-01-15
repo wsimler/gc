@@ -1,0 +1,62 @@
+CHECK_AVAILABILITY
+<?php
+include('config.php');
+$t = (int) $data['type'];
+if($t == 1){
+    $p = $data['phone'];
+    $qry = "select * from users where phone = '$p' ";
+} else if($t == 2) {
+    $e = $data['email'];
+    $p = $data['phone'];
+    $qry = "select * from users where email = '$e' or phone = '$p' ";
+}
+$res = mysqli_query($con, $qry);
+if(mysqli_num_rows($res) != 0){
+    $response = array('status' => 200, 'message' => 'User can be created');
+} else
+    $response = array('status' => 500, 'message' => 'User cannot be created');
+die(json_encode($response));
+?>
+
+REGISTER
+<?php
+include('config.php');
+$email = $data['email'];
+$phone = $data['phone'];
+$password = $data['password'];
+$name = $data['full_name'];
+$address = $data['address'];
+$city = $data['city'];
+$state = $data['state'];
+$zip = $data['zip'];
+$fcm = $data['fcm_token'];
+$qry = "insert into users (`name`, `email`, `phone`, `password`, `address`, `city`, `state`, `zip`, `fcm_token`, `created_at`, `modified_at`) values('$name', '$email', '$phone', '$password', '$address', '$city', '$state', '$zip', '$fcm', '$dateTime', '$dateTime') ";
+$res = mysqli_query($con, $qry);
+if($res && mysqli_affected_rows($res) != 0){
+    $response = array('status' => 200, 'message' => 'User registered', 'user_id' => mysqli_insert_id($con));
+} else {
+    $response = array('status' => 500, 'message' => 'Error registering user');
+}
+die(json_encode($response));
+?>
+
+MASTERS
+tools: id, title, sub_title, created_at
+floors: id, title, created_at
+<?php
+include('config.php');
+function getData($con, $qry){
+    $sql = mysqli_query($con, $qry);
+    $cc = array();
+    if(mysqli_num_rows($sql) != 0){
+        while($r = mysqli_fetch_assoc($sql)){
+            $cc[] = $r;
+        }
+    }
+    return $cc;
+}
+$data = array();
+$data['tools'] = getData($con, "select id, title, sub_title from tools");
+$data['floors'] = getData($con, "select id, title from floors");
+die(json_encode($data));
+?>

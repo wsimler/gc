@@ -13,15 +13,31 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".GridActivity">
+
+        <com.zxc.roomkotlin.GCRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <com.zxc.roomkotlin.GCRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B" />
+
+        <com.zxc.roomkotlin.GCRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C" />
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            app:spanCount="3"
             android:adapter="@{vm.adapter}"
-            app:layoutManager="android.support.v7.widget.GridLayoutManager" />
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="3" />
 
     </LinearLayout>
 </layout>

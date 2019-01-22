@@ -13,6 +13,9 @@ public class Demo extends RecyclerView.Adapter<Demo.ViewHolder> {
 
     private List<Model> list = new ArrayList<>();
 
+    private int index = -1;
+    private boolean isOneEnabled = false;
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return null;
@@ -25,6 +28,16 @@ public class Demo extends RecyclerView.Adapter<Demo.ViewHolder> {
         holder.aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+//                if (position == index) {
+//                    compoundButton.setChecked(false);
+//                    isOneEnabled = false;
+//                    index = -1;
+//                } else {
+//                    if (!isOneEnabled) {
+//                        compoundButton.setChecked(true);
+//                        isOneEnabled = true;
+//                    }
+//                }
                 Model model = list.get(position);
                 if (isAnyEnabled()) {
                     if (model.isEnabled){

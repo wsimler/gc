@@ -5,7 +5,7 @@
 
         <variable
             name="vm"
-            type="com.zxc.roomkotlin.GridVM" />
+            type="com.zxc.roomkotlin.old.GridVM" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,19 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".GridActivity">
+        tools:context=".old.GridActivity">
 
-        <com.zxc.roomkotlin.GCRadioButton
+        <com.zxc.roomkotlin.old.GCRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A" />
 
-        <com.zxc.roomkotlin.GCRadioButton
+        <com.zxc.roomkotlin.old.GCRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="B" />
 
-        <com.zxc.roomkotlin.GCRadioButton
+        <com.zxc.roomkotlin.old.GCRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="C" />

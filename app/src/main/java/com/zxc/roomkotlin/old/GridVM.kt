@@ -1,4 +1,4 @@
-package com.zxc.roomkotlin
+package com.zxc.roomkotlin.old
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel

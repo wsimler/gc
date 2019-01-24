@@ -1,4 +1,4 @@
-package com.zxc.roomkotlin
+package com.zxc.roomkotlin.old
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.View
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
+import com.zxc.roomkotlin.R
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {

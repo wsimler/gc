@@ -12,19 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".swth.SwitchActivity">
+        <activity android:name=".gc.DrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".pdf.OpenPdf" />
-        <activity android:name=".pdf.PdfPage">
+        <activity android:name=".swth.SwitchActivity">
 
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".GridActivity" />
+        <activity android:name=".pdf.OpenPdf" />
+        <activity android:name=".pdf.PdfPage"></activity>
+        <activity android:name=".old.MainActivity" />
+        <activity android:name=".old.GridActivity" />
     </application>
 
 </manifest>

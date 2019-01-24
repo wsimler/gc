@@ -66,3 +66,7 @@ attributes: id, attribute (FLOORS, TOOLS)
 house: id, name, photo, adults, children, pets, sq_ft_id, stories, full_bath, half_bath, bedroom, living_space
 house_attributes: id, house_id, attribute_id, value
 house_preference: id, house_id, not_home, hidden_key, watch_cleaner
+
+
+Cleaning: id, user_id, house_id, whole/single, cleaning_type, cleaning_duration(onetime, weekly), date of cleaning,
+attributes: id, house_id, attribute_id, value

@@ -1,9 +1,10 @@
-package com.zxc.roomkotlin
+package com.zxc.roomkotlin.old
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.zxc.roomkotlin.R
 import com.zxc.roomkotlin.databinding.GridItemBinding
 
 class GridAdapter(private var mItems: List<GridItem>) : RecyclerView.Adapter<GridAdapter.ViewHolder>() {

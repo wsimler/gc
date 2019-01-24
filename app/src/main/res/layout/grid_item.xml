@@ -6,11 +6,11 @@
 
         <variable
             name="listener"
-            type="com.zxc.roomkotlin.ClickListener" />
+            type="com.zxc.roomkotlin.old.ClickListener" />
 
         <variable
             name="item"
-            type="com.zxc.roomkotlin.GridItem" />
+            type="com.zxc.roomkotlin.old.GridItem" />
     </data>
 
     <android.support.constraint.ConstraintLayout

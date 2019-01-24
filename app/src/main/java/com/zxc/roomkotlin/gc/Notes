@@ -12,6 +12,8 @@ Logical Queries:
     4. Cleaning progress ui and functionality
     5. Living spaces issue (on addition there is only one field living spaces but on cleaning progress ui there are dining room, kitchen, living room)
     6. Cleaner app ui & functionality
+    7. Whats the use of left navigation drawer when the main screen hai all the features in grid
+    8. Chatting ??
 
 Logics implemented:
     1. Tools and preference questions will be saved based on house not on user (i.e each house will have separate list of tools and preference questions)

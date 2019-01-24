@@ -11,6 +11,7 @@ Logical Queries:
     3. Payment gateway
     4. Cleaning progress ui and functionality
     5. Living spaces issue (on addition there is only one field living spaces but on cleaning progress ui there are dining room, kitchen, living room)
+    6. Cleaner app ui & functionality
 
 Logics implemented:
     1. Tools and preference questions will be saved based on house not on user (i.e each house will have separate list of tools and preference questions)

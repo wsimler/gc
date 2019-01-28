@@ -1,19 +1,19 @@
 Requirements:
     1. App icon
-    2. Background image
+    2. Background image( We are changing the design, the client did not like what we created thus far, they want their color palette to match their website, https://www.cleanuptheapp.com/)
     3. Dashboard icons
-    4. Support page - question, answers, mail id, phone number
-    5. Will there be a limit to add houses per user.
+    4. Support page - question, answers, mail id, phone number (Getting all of that from clients)
+    5. Will there be a limit to add houses per user.(No limit)
 
 Logical Queries:
-    1. There no option to apply discounted packages when scheduling a cleanup
-    2. There is no ui to describe what will be in the purchase discounted package screen
-    3. Payment gateway
-    4. Cleaning progress ui and functionality
-    5. Living spaces issue (on addition there is only one field living spaces but on cleaning progress ui there are dining room, kitchen, living room)
+    1. There no option to apply discounted packages when scheduling a cleanup (When creating a discount it should provide a code that will attach to the checkout screen... I Think that would work best) 
+    2. There is no ui to describe what will be in the purchase discounted package screen (client still creating discounted packages)
+    3. Payment gateway(Client using Paypal Pro) 
+    4. Cleaning progress ui and functionality(Will be getting you this)
+    5. Living spaces issue (on addition there is only one field living spaces but on cleaning progress ui there are dining room, kitchen, living room)(The living spaces include living room, kitchen, dining room, laundry room, bedrooms)
     6. Cleaner app ui & functionality
-    7. Whats the use of left navigation drawer when the main screen hai all the features in grid
-    8. Chatting ??
+    7. Whats the use of left navigation drawer when the main screen hai all the features in grid(To get back to the main screen or go to a different area, if you think that is uneccesary then remove it)
+    8. Chatting ??(What about chatting, there is a chat feature so the homeowner can chat with the cleaner during the cleaning. That is on the cleaning screen)
 
 Logics implemented:
-    1. Tools and preference questions will be saved based on house not on user (i.e each house will have separate list of tools and preference questions)
+    1. Tools and preference questions will be saved based on house not on user (i.e each house will have separate list of tools and preference questions)(correct a user should be able to add multiple houses)
